@@ -1,11 +1,10 @@
 define([
-  'angular'
+  'controllers'
 ],
-function(angular) {
+function(controllers) {
   'use strict';
 
-  return angular.module('checkout.controllers', ['checkout.services'])
-  .controller('MainCtrl', function ($scope) {
+  controllers.controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
