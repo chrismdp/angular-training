@@ -1,7 +1,9 @@
 {
   "name": "karma",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "requirejs": "~2.1.11"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.4.0",

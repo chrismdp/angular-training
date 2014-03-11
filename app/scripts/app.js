@@ -1,18 +1,26 @@
-'use strict';
+define([
+  'angular',
+  'angularRoute',
+  'angularResource',
+  'angularCookies',
+  'angularSanitize',
+  'services',
+  'filters',
+  'directives',
+  'controllers/main'
+],
+function(angular) {
+  'use strict';
 
-angular.module('karmaApp', [
-  'ngCookies',
-  'ngResource',
-  'ngSanitize',
-  'ngRoute'
-])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+  return angular.module('checkout', [
+    'ngCookies',
+    'ngResource',
+    'ngSanitize',
+    'ngRoute',
+    'checkout.controllers',
+    'checkout.filters',
+    'checkout.services',
+    'checkout.directives'
+  ]);
+});
+
