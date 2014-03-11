@@ -10,6 +10,10 @@ function(angular, app) {
       controller: 'MainCtrl',
       templateUrl: 'views/main.html'
     }).
+    when('/item', {
+      controller: 'ItemCtrl',
+      templateUrl: 'views/item.html'
+    }).
     otherwise({
       redirectTo: '/'
     });

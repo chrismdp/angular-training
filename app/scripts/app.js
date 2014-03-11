@@ -7,7 +7,8 @@ define([
   'services',
   'filters',
   'directives',
-  'controllers/main'
+  'controllers/main',
+  'controllers/item'
 ],
 function(angular) {
   'use strict';
